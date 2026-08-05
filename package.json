@@ -1,6 +1,6 @@
 {
   "name": "@spyko/otel-bootstrap",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Two-line OpenTelemetry + pino bootstrap for Node backends: OTLP traces and JSON logs with trace_id correlation baked in",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -8,14 +8,24 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     },
     "./register": {
-      "types": "./dist/register.d.ts",
-      "import": "./dist/register.js",
-      "require": "./dist/register.cjs"
+      "import": {
+        "types": "./dist/register.d.ts",
+        "default": "./dist/register.js"
+      },
+      "require": {
+        "types": "./dist/register.d.cts",
+        "default": "./dist/register.cjs"
+      }
     }
   },
   "files": [
