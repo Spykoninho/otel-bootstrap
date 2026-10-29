@@ -65,7 +65,7 @@
   "devDependencies": {
     "@opentelemetry/sdk-trace-node": "2.10.0",
     "@spyko/eslint-config": "0.1.1",
-    "@types/node": "26.1.2",
+    "@types/node": "26.6.6",
     "eslint": "10.8.0",
     "tsup": "8.5.1",
     "typescript": "6.0.3",
